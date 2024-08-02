@@ -18,8 +18,7 @@
     background-color: var(--primary);
 
     &:hover {
-      background-color: var(--primary-010);
-      color: var(--white);
+      filter: brightness(0.8);
     }
   }
 
