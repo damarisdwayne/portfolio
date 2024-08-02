@@ -4,13 +4,14 @@
     @for (item of arrayProjects(); track item) {
     <li>
       <button (click)="openDialog(item)">
-        <img
+        <p>{{item.title}}</p>
+        <!-- <img
           [src]="item.src"
           [alt]="item.alt"
           [attr.width]="item.width"
           [attr.height]="item.height"
           loading="lazy"
-        />
+        /> -->
       </button>
     </li>
     }
