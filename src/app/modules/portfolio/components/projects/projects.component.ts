@@ -45,6 +45,21 @@ export class ProjectsComponent {
         },
       ],
     },
+    {
+      src: '',
+      alt: 'Projeto DevStore',
+      title: 'DevStore',
+      width: '100%',
+      height: '100%',
+      description:
+        '<p>Esta aplicação é um e-commerce inovador focado em produtos exclusivos para desenvolvedores e entusiastas da tecnologia. Criada com Next.js, a plataforma oferece uma experiência de navegação rápida e responsiva, garantindo que os usuários encontrem com facilidade produtos como camisetas temáticas, acessórios de tecnologia, livros e ferramentas essenciais para o dia a dia dos devs.</p>',
+      links: [
+        {
+          name: 'Conheça o Projeto',
+          href: 'devstore-seven-sandy.vercel.app',
+        },
+      ],
+    },
   ]);
 
   public openDialog(data: IProjects): void {
