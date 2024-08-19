@@ -56,7 +56,7 @@ export class ProjectsComponent {
       links: [
         {
           name: 'Conheça o Projeto',
-          href: 'devstore-seven-sandy.vercel.app',
+          href: 'https://devstore-seven-sandy.vercel.app/',
         },
       ],
     },
