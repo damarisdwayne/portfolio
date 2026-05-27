@@ -1,13 +1,37 @@
 :root {
-  --primary: #A020F0;
+  /* Brand / accent */
+  --primary: #8b5cf6;
+  --primary-600: #7c3aed;
+  --primary-400: #a78bfa;
+  --accent: #22d3ee;
 
-  --secondary: #06628a;
-  --secondary-010: #06374e;
+  /* Gradients */
+  --gradient-brand: linear-gradient(135deg, #8b5cf6 0%, #6366f1 50%, #22d3ee 100%);
+  --gradient-text: linear-gradient(120deg, #c4b5fd 0%, #a78bfa 40%, #67e8f9 100%);
+
+  /* Legacy alias kept for compatibility */
+  --secondary: #6366f1;
+  --secondary-010: #4f46e5;
 
   --white: #fff;
 
-  --black: #10101a;
-  --black-010: #2a2a30;
+  /* Surfaces */
+  --bg: #0a0a0f;
+  --black: #0a0a0f;
+  --surface: #14141d;
+  --black-010: #14141d;
+  --surface-2: #1c1c28;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
 
-  --gray: #9b9ba0;
+  /* Text */
+  --text: #f4f4f7;
+  --gray: #a1a1ad;
+  --muted: #6b6b78;
+
+  /* Effects */
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.25);
 }

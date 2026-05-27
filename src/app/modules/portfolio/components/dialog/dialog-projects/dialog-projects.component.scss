@@ -1,54 +1,100 @@
-::ng-deep .dialog-container-projects .mdc-dialog__container {
-  width: 850px;
+::ng-deep .dialog-container-projects {
+  .mdc-dialog__container,
+  .mat-mdc-dialog-surface {
+    width: 100%;
+    max-width: 560px;
+    border-radius: var(--radius) !important;
+    background: var(--surface) !important;
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow-soft), var(--shadow-glow);
+    overflow: hidden;
+  }
+
+  .mat-mdc-dialog-surface {
+    padding: 28px 30px;
+  }
 }
 
 :host {
-  padding: 10px 30px;
   display: flex;
   flex-direction: column;
-
-  header,
-  h3,
-  p,
-  mat-dialog-content {
-    padding: 0;
-    margin: 0 0 15px;
-  }
+  color: var(--text);
 
   header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 18px;
 
     h2 {
-      font-size: 22px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
       padding: 0;
       margin: 0;
-      color: var(--black-010);
+      color: var(--text);
+      background: var(--gradient-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     button {
-      background: none;
-      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      border-radius: 50%;
       padding: 0;
       cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+
+      img {
+        width: 14px;
+        height: 14px;
+        filter: invert(1) brightness(0.9);
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: var(--border-strong);
+      }
     }
   }
 
   h3 {
-    font-size: 18px;
-    color: var(--black-010);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    color: var(--primary-400);
+    margin: 0 0 10px;
+  }
+
+  mat-dialog-content {
+    padding: 0;
+    margin: 0;
+    max-height: unset;
   }
 
   article {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 
     p {
-      font-size: 16px;
+      font-size: 0.97rem;
+      color: var(--gray);
+      margin: 0;
     }
   }
 
   nav {
     display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 }

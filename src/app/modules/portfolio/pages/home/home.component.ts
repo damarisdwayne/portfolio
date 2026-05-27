@@ -12,5 +12,5 @@ import { ProjectsComponent } from '../../components/projects/projects.component'
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  public readonly currentYear = new Date().getFullYear();
 }

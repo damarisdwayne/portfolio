@@ -6,10 +6,22 @@
   @defer (on viewport) {
   <app-projects />
   } @placeholder {
-  <section><h2>Carregando todos os projetos desenvolvidos...</h2></section>
+  <section><p>Carregando todos os projetos desenvolvidos...</p></section>
   }@error {
   <section>
-    <h2>Ocorreu um erro no download do componente, tente novamente</h2>
+    <p>Ocorreu um erro no download do componente, tente novamente</p>
   </section>
   }
 </main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Dâmaris Dwayne · Frontend Engineer</p>
+    <nav>
+      <a href="https://www.linkedin.com/in/d%C3%A2maris-dwayne/" target="_blank">LinkedIn</a>
+      <a href="mailto:damarisdwayne@outlook.com" target="_blank">E-mail</a>
+      <a href="https://api.whatsapp.com/send?phone=5531985821236" target="_blank">WhatsApp</a>
+    </nav>
+    <p class="site-footer__year">© {{ currentYear }} · Feito com Angular</p>
+  </div>
+</footer>

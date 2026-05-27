@@ -1,18 +1,19 @@
 <div class="container">
+  <p class="section-eyebrow">Carreira</p>
   <h2>Últimas Experiências</h2>
-  @for (item of arrayExperiences(); track $index) {
 
-  <details>
-    <summary>
-      <p>
-        <strong>
-          {{ item.summary.strong }}
-        </strong>
-        {{ item.summary.p }}
-      </p>
-    </summary>
-
-    <article [innerHTML]="item.text"></article>
-  </details>
-  }
+  <div class="timeline">
+    @for (item of arrayExperiences(); track $index) {
+    <details class="timeline__item">
+      <summary>
+        <div class="timeline__head">
+          <strong>{{ item.summary.strong }}</strong>
+          <span>{{ item.summary.p }}</span>
+        </div>
+        <span class="timeline__chevron" aria-hidden="true"></span>
+      </summary>
+      <article [innerHTML]="item.text"></article>
+    </details>
+    }
+  </div>
 </div>

@@ -1,16 +1,17 @@
 <div class="container">
+  <p class="section-eyebrow">Stack</p>
   <h2>Conhecimentos</h2>
   <ul>
-    @for (item of arrayKnowledge(); track item) {
-
+    @for (item of arrayKnowledge(); track item.name) {
     <li>
       <img
         [src]="item.src"
         [alt]="item.alt"
         loading="lazy"
-        width="22px"
-        height="24px"
+        width="28"
+        height="28"
       />
+      <span>{{ item.name }}</span>
     </li>
     }
   </ul>

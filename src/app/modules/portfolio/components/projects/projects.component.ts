@@ -60,6 +60,36 @@ export class ProjectsComponent {
         },
       ],
     },
+    {
+      src: '',
+      alt: 'Projeto My Wallet',
+      title: 'My Wallet',
+      width: '100%',
+      height: '100%',
+      description:
+        '<p>O My Wallet é uma aplicação de controle financeiro pessoal que permite ao usuário gerenciar suas entradas e saídas de forma prática e organizada. Com autenticação de usuários, a plataforma oferece um acompanhamento claro do saldo e das movimentações financeiras do dia a dia.</p>',
+      links: [
+        {
+          name: 'Conheça o Projeto',
+          href: 'https://my-wallet-nine-ruddy.vercel.app/login',
+        },
+      ],
+    },
+    {
+      src: '',
+      alt: 'Projeto Milhas.Pro',
+      title: 'Milhas.Pro',
+      width: '100%',
+      height: '100%',
+      description:
+        '<p>O Milhas.Pro é uma aplicação voltada para o gerenciamento e a otimização de milhas aéreas, ajudando o usuário a controlar seus programas de fidelidade e a aproveitar melhor seus pontos e benefícios.</p>',
+      links: [
+        {
+          name: 'Conheça o Projeto',
+          href: 'https://milhas-pro-silk.vercel.app/index.html',
+        },
+      ],
+    },
   ]);
 
   public openDialog(data: IProjects): void {
