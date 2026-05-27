@@ -39,7 +39,7 @@ export class ProjectsComponent {
     {
       title: 'Milhas.Pro',
       key: 'milhaspro',
-      href: 'https://milhas-pro-git-main-damarisdwaynes-projects.vercel.app/',
+      href: 'https://milhas-pro-silk.vercel.app/',
     },
   ]);
 
