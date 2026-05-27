@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "status": "Available for projects",
+    "role": "Frontend Engineer",
+    "location": "📍 Belo Horizonte, Minas Gerais, Brazil",
+    "bio": "I am a highly dedicated developer on a constant journey of self-improvement, committed to writing extraordinary code. My continuous pursuit of knowledge drives me to explore new technologies and sharpen my skills, ensuring that every line of code is exceptional!",
+    "cv": "Download CV",
+    "cvPt": "Portuguese",
+    "cvEn": "English",
+    "cvRecommended": "Recommended",
+    "linkedin": "LinkedIn",
+    "whatsappTitle": "Send a message",
+    "whatsappValue": "WhatsApp: +55 (31) 9 8582-1236",
+    "emailTitle": "Send an email",
+    "emailValue": "damarisdwayne@outlook.com"
+  },
+  "knowledge": {
+    "eyebrow": "Stack",
+    "title": "Skills"
+  },
+  "experiences": {
+    "eyebrow": "Career",
+    "title": "Latest Experiences",
+    "pensiondynamics": {
+      "role": "Frontend Software Engineer",
+      "period": "PensionDynamics AG | Jun 2022 - Present",
+      "text": "<p>As a Frontend Developer at PensionDynamics AG, I work with React, Redux, Jotai and React Query to build robust and efficient web applications. I use Cypress and Jest for rigorous testing to ensure code quality. I am also responsible for creating and maintaining a design system that improves consistency and user experience across our products.</p>"
+    },
+    "bhsoftwares": {
+      "role": "Software Developer",
+      "period": "BH Softwares | Jan 2022 - Jun 2022",
+      "text": "<p>As a Software Developer at BH Softwares, I played a key role in building custom websites and applications tailored to the unique needs of our diverse clientele. Leveraging the power of React and React Native, I contributed to cutting-edge digital solutions that combine creativity and functionality.</p>"
+    },
+    "projelet": {
+      "role": "Backend Developer",
+      "period": "Projelet | Jun 2021 - Dec 2021",
+      "text": "<p>As a Software Developer at Projelet, I worked with C# to automate the creation of installation projects in Revit, improving workflow efficiency. I collaborated with teams and stakeholders in a Scrum environment and developed MySQL queries to optimize data management.</p>"
+    },
+    "multicredito": {
+      "role": "Software Developer",
+      "period": "MultiCrédito | Jan 2020 - Jun 2021",
+      "text": "<p>As a Software Developer at MultiCrédito, I worked with a team to create new and innovative features for web and mobile. We used JavaScript/TypeScript, HTML and CSS to improve our users' digital experience. I also helped modernize a legacy system built with PL/SQL, using Asp.NET.</p>"
+    }
+  },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Projects developed",
+    "details": "View details",
+    "viewLabel": "View details of project",
+    "cta": "Visit the project",
+    "dialogDescription": "Description",
+    "closeAlt": "Button to close the dialog",
+    "quiz": {
+      "description": "<p>The Quiz project is designed to test the user's general knowledge through a series of questions. It uses Next.js for the frontend and incorporates react-countdown-circle-timer for an engaging animated timer. At the end of the quiz, the project shows the user the total number of answers, the number of correct answers and the accuracy percentage.</p>"
+    },
+    "notes": {
+      "description": "<p>This is a simple application for recording notes by text or voice using the Speech Recognition API. It is built with modern technologies such as Tailwind CSS, Vite, Date-fns, Lucide, Sonner and Radix Dialog.</p>"
+    },
+    "devstore": {
+      "description": "<p>This application is an innovative e-commerce focused on exclusive products for developers and tech enthusiasts. Built with Next.js, the platform offers a fast and responsive browsing experience, making it easy for users to find products such as themed t-shirts, tech accessories, books and essential tools for a developer's daily life.</p>"
+    },
+    "mywallet": {
+      "description": "<p>My Wallet is a personal finance management application that lets users track their income and expenses in a practical and organized way. With user authentication, the platform offers a clear overview of the balance and day-to-day financial movements.</p>"
+    },
+    "milhaspro": {
+      "description": "<p>Milhas.Pro is an application focused on managing and optimizing airline miles, helping users control their loyalty programs and make the most of their points and benefits.</p>"
+    }
+  },
+  "footer": {
+    "tagline": "Dâmaris Dwayne · Frontend Engineer",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "made": "Built with Angular"
+  },
+  "lang": {
+    "switchTo": "Switch to Portuguese"
+  }
+}

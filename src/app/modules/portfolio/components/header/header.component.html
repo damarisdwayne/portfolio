@@ -1,19 +1,30 @@
-<section class="hero">
+<section class="hero" *transloco="let t">
+  <button
+    type="button"
+    class="lang-toggle"
+    (click)="toggleLang()"
+    [attr.aria-label]="t('lang.switchTo')"
+  >
+    <span [class.is-active]="activeLang() === 'pt'">PT</span>
+    <span class="lang-toggle__sep">/</span>
+    <span [class.is-active]="activeLang() === 'en'">EN</span>
+  </button>
+
   <div class="container hero__inner">
     <div class="hero__avatar">
       <img
         src="assets/img/damaris.jpeg"
-        alt="Dâmaris Dwayne - Foto de perfil"
+        alt="Dâmaris Dwayne"
         width="140"
         height="140"
         loading="eager"
       />
-      <span class="hero__status">Disponível para projetos</span>
+      <span class="hero__status">{{ t('hero.status') }}</span>
     </div>
 
     <h1 class="hero__name">Dâmaris Dwayne</h1>
 
-    <p class="hero__role">Frontend Engineer</p>
+    <p class="hero__role">{{ t('hero.role') }}</p>
 
     <ul class="hero__stack">
       <li>JavaScript</li>
@@ -22,26 +33,47 @@
       <li>Angular</li>
     </ul>
 
-    <p class="hero__location">📍 Belo Horizonte, Minas Gerais, Brasil</p>
+    <p class="hero__location">{{ t('hero.location') }}</p>
 
-    <p class="hero__bio">
-      Sou uma programadora altamente dedicada em uma constante jornada de
-      autodesenvolvimento, comprometida em criar códigos extraordinários. Minha
-      busca contínua por conhecimento me motiva a explorar novas tecnologias e
-      aprimorar minhas habilidades, garantindo que cada linha de código seja
-      excepcional!
-    </p>
+    <p class="hero__bio">{{ t('hero.bio') }}</p>
 
     <nav class="hero__actions">
-      <a href="assets/pdf/cv.pdf" target="_blank" class="btn btn-primary">
-        Download CV
-      </a>
+      <div class="cv-dropdown">
+        <button
+          type="button"
+          class="btn btn-primary cv-dropdown__trigger"
+          (click)="toggleCvMenu()"
+          [attr.aria-expanded]="cvMenuOpen()"
+          aria-haspopup="true"
+        >
+          {{ t('hero.cv') }}
+          <span class="cv-dropdown__caret" aria-hidden="true"></span>
+        </button>
+
+        @if (cvMenuOpen()) {
+        <div class="cv-dropdown__menu" role="menu">
+          @for (cv of cvOptions; track cv.lang) {
+          <a
+            role="menuitem"
+            class="cv-dropdown__item"
+            [href]="cv.href"
+            [attr.download]="cv.download"
+            (click)="closeCvMenu()"
+          >
+            <span class="cv-dropdown__flag">{{ cv.flag }}</span>
+            {{ t(cv.labelKey) }}
+          </a>
+          }
+        </div>
+        }
+      </div>
+
       <a
         href="https://www.linkedin.com/in/d%C3%A2maris-dwayne/"
         target="_blank"
         class="btn btn-secondary"
       >
-        LinkedIn
+        {{ t('hero.linkedin') }}
       </a>
     </nav>
 
@@ -53,26 +85,26 @@
       >
         <img
           src="assets/icons/whatsapp.svg"
-          alt="Ícone para contato do whatsapp"
+          alt="WhatsApp"
           width="22"
           height="24"
         />
         <span>
-          <strong>Envie uma mensagem</strong>
-          WhatsApp: (31) 9 8582-1236
+          <strong>{{ t('hero.whatsappTitle') }}</strong>
+          {{ t('hero.whatsappValue') }}
         </span>
       </a>
 
       <a href="mailto:damarisdwayne@outlook.com" target="_blank" class="contact-card">
         <img
           src="assets/icons/mail.svg"
-          alt="Ícone para contato do e-mail"
+          alt="E-mail"
           width="22"
           height="24"
         />
         <span>
-          <strong>Envie um e-mail</strong>
-          damarisdwayne&#64;outlook.com
+          <strong>{{ t('hero.emailTitle') }}</strong>
+          {{ t('hero.emailValue') }}
         </span>
       </a>
     </div>

@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
+import { TranslocoModule } from '@jsverse/transloco';
 import { IKnowledge } from '../../interface/IKnowledge.interface copy';
 
 @Component({
   selector: 'app-knowledge',
   standalone: true,
-  imports: [],
+  imports: [TranslocoModule],
   templateUrl: './knowledge.component.html',
   styleUrl: './knowledge.component.scss',
 })

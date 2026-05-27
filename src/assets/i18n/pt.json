@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "status": "Disponível para projetos",
+    "role": "Frontend Engineer",
+    "location": "📍 Belo Horizonte, Minas Gerais, Brasil",
+    "bio": "Sou uma programadora altamente dedicada em uma constante jornada de autodesenvolvimento, comprometida em criar códigos extraordinários. Minha busca contínua por conhecimento me motiva a explorar novas tecnologias e aprimorar minhas habilidades, garantindo que cada linha de código seja excepcional!",
+    "cv": "Baixar CV",
+    "cvPt": "Português",
+    "cvEn": "Inglês",
+    "cvRecommended": "Recomendado",
+    "linkedin": "LinkedIn",
+    "whatsappTitle": "Envie uma mensagem",
+    "whatsappValue": "WhatsApp: (31) 9 8582-1236",
+    "emailTitle": "Envie um e-mail",
+    "emailValue": "damarisdwayne@outlook.com"
+  },
+  "knowledge": {
+    "eyebrow": "Stack",
+    "title": "Conhecimentos"
+  },
+  "experiences": {
+    "eyebrow": "Carreira",
+    "title": "Últimas Experiências",
+    "pensiondynamics": {
+      "role": "Engenheira de Software Frontend",
+      "period": "PensionDynamics AG | Jun 2022 - Atual",
+      "text": "<p>Como Desenvolvedora Frontend na PensionDynamics AG, trabalho com React, Redux, Jotai e React Query para desenvolver aplicações web robustas e eficientes. Utilizo Cypress e Jest para realizar testes rigorosos e garantir a qualidade do código. Além disso, sou responsável pela criação e manutenção de um design system que aprimora a consistência e a experiência do usuário em nossos produtos.</p>"
+    },
+    "bhsoftwares": {
+      "role": "Desenvolvedora de Software",
+      "period": "BH Softwares | Jan 2022 - Jun 2022",
+      "text": "<p>Como Desenvolvedora de Software na Bh Softwares, desempenhei um papel fundamental na criação de sites e aplicativos personalizados, adaptados para atender às necessidades únicas de nossa clientela diversificada. Aproveitando o poder do React e do React Native, contribuí para o desenvolvimento de soluções digitais de ponta que combinam criatividade e funcionalidade.</p>"
+    },
+    "projelet": {
+      "role": "Desenvolvedora Backend",
+      "period": "Projelet | Jun 2021 - Dez 2021",
+      "text": "<p>Como Desenvolvedora de Software na Projelet, trabalhei com C# para automatizar a criação de projetos de instalação em Revit, melhorando a eficiência dos fluxos de trabalho. Colaborei com equipes e stakeholders em um ambiente Scrum e desenvolvi consultas MySQL para otimizar a gestão de dados.</p>"
+    },
+    "multicredito": {
+      "role": "Desenvolvedora de Software",
+      "period": "MultiCrédito | Jan 2020 - Jun 2021",
+      "text": "<p>Como Desenvolvedora de Software na MultiCrédito, trabalhei com uma equipe para criar funcionalidades novas e inovadoras para web e mobile. Usamos JavaScript/TypeScript, HTML e CSS para melhorar a experiência digital dos nossos usuários. Também ajudei a modernizar um sistema antigo que foi feito com PL/SQL, utilizando Asp.NET.</p>"
+    }
+  },
+  "projects": {
+    "eyebrow": "Portfólio",
+    "title": "Projetos desenvolvidos",
+    "details": "Ver detalhes",
+    "viewLabel": "Ver detalhes do projeto",
+    "cta": "Conheça o Projeto",
+    "dialogDescription": "Descrição",
+    "closeAlt": "Botão para fechar o dialog",
+    "quiz": {
+      "description": "<p>O projeto Quiz é projetado para testar o conhecimento geral do usuário através de uma série de perguntas. Ele utiliza o Next.js para o frontend e incorpora o react-countdown-circle-timer para um temporizador animado envolvente. No final do quiz, o projeto apresenta ao usuário o total de respostas, o número de respostas corretas e a porcentagem de acertos.</p>"
+    },
+    "notes": {
+      "description": "<p>Esta é uma aplicação simples para registrar notas em texto ou por voz usando a API de Reconhecimento de Fala. Ela é desenvolvida com tecnologias modernas como Tailwind CSS, Vite, Date-fns, Lucide, Sonner e Radix Dialog.</p>"
+    },
+    "devstore": {
+      "description": "<p>Esta aplicação é um e-commerce inovador focado em produtos exclusivos para desenvolvedores e entusiastas da tecnologia. Criada com Next.js, a plataforma oferece uma experiência de navegação rápida e responsiva, garantindo que os usuários encontrem com facilidade produtos como camisetas temáticas, acessórios de tecnologia, livros e ferramentas essenciais para o dia a dia dos devs.</p>"
+    },
+    "mywallet": {
+      "description": "<p>O My Wallet é uma aplicação de controle financeiro pessoal que permite ao usuário gerenciar suas entradas e saídas de forma prática e organizada. Com autenticação de usuários, a plataforma oferece um acompanhamento claro do saldo e das movimentações financeiras do dia a dia.</p>"
+    },
+    "milhaspro": {
+      "description": "<p>O Milhas.Pro é uma aplicação voltada para o gerenciamento e a otimização de milhas aéreas, ajudando o usuário a controlar seus programas de fidelidade e a aproveitar melhor seus pontos e benefícios.</p>"
+    }
+  },
+  "footer": {
+    "tagline": "Dâmaris Dwayne · Frontend Engineer",
+    "linkedin": "LinkedIn",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "made": "Feito com Angular"
+  },
+  "lang": {
+    "switchTo": "Mudar para inglês"
+  }
+}

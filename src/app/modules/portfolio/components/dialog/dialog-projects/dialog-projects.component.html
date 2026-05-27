@@ -1,21 +1,21 @@
-<header>
-  <h2 mat-dialog-title>{{ getData()?.title }}</h2>
+<ng-container *transloco="let t">
+  <header>
+    <h2 mat-dialog-title>{{ getData()?.title }}</h2>
 
-  <button (click)="closeModal()">
-    <img src="assets/icons/dialog/close.svg" alt="Botão para fechar o dialog" />
-  </button>
-</header>
+    <button (click)="closeModal()">
+      <img src="assets/icons/dialog/close.svg" [alt]="t('projects.closeAlt')" />
+    </button>
+  </header>
 
-<mat-dialog-content>
-  <h3>Descrição</h3>
+  <mat-dialog-content>
+    <h3>{{ t('projects.dialogDescription') }}</h3>
 
-  <article [innerHTML]="getData()?.description"></article>
+    <article [innerHTML]="t('projects.' + getData()?.key + '.description')"></article>
 
-  <nav>
-    @for(item of getData()?.links; track item){
-    <a [href]="item.href" target="_blank" class="btn btn-primary">
-      {{ item.name }}
-    </a>
-    }
-  </nav>
-</mat-dialog-content>
+    <nav>
+      <a [href]="getData()?.href" target="_blank" class="btn btn-primary">
+        {{ t('projects.cta') }}
+      </a>
+    </nav>
+  </mat-dialog-content>
+</ng-container>

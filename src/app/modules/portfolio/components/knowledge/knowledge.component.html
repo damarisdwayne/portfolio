@@ -1,6 +1,6 @@
-<div class="container">
-  <p class="section-eyebrow">Stack</p>
-  <h2>Conhecimentos</h2>
+<div class="container" *transloco="let t">
+  <p class="section-eyebrow">{{ t('knowledge.eyebrow') }}</p>
+  <h2>{{ t('knowledge.title') }}</h2>
   <ul>
     @for (item of arrayKnowledge(); track item.name) {
     <li>

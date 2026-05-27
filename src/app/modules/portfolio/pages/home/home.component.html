@@ -14,14 +14,14 @@
   }
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" *transloco="let t">
   <div class="container">
-    <p>Dâmaris Dwayne · Frontend Engineer</p>
+    <p>{{ t('footer.tagline') }}</p>
     <nav>
-      <a href="https://www.linkedin.com/in/d%C3%A2maris-dwayne/" target="_blank">LinkedIn</a>
-      <a href="mailto:damarisdwayne@outlook.com" target="_blank">E-mail</a>
-      <a href="https://api.whatsapp.com/send?phone=5531985821236" target="_blank">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/d%C3%A2maris-dwayne/" target="_blank">{{ t('footer.linkedin') }}</a>
+      <a href="mailto:damarisdwayne@outlook.com" target="_blank">{{ t('footer.email') }}</a>
+      <a href="https://api.whatsapp.com/send?phone=5531985821236" target="_blank">{{ t('footer.whatsapp') }}</a>
     </nav>
-    <p class="site-footer__year">© {{ currentYear }} · Feito com Angular</p>
+    <p class="site-footer__year">© {{ currentYear }} · {{ t('footer.made') }}</p>
   </div>
 </footer>

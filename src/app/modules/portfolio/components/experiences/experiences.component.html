@@ -1,18 +1,18 @@
-<div class="container">
-  <p class="section-eyebrow">Carreira</p>
-  <h2>Últimas Experiências</h2>
+<div class="container" *transloco="let t">
+  <p class="section-eyebrow">{{ t('experiences.eyebrow') }}</p>
+  <h2>{{ t('experiences.title') }}</h2>
 
   <div class="timeline">
-    @for (item of arrayExperiences(); track $index) {
+    @for (key of arrayExperiences(); track key) {
     <details class="timeline__item">
       <summary>
         <div class="timeline__head">
-          <strong>{{ item.summary.strong }}</strong>
-          <span>{{ item.summary.p }}</span>
+          <strong>{{ t('experiences.' + key + '.role') }}</strong>
+          <span>{{ t('experiences.' + key + '.period') }}</span>
         </div>
         <span class="timeline__chevron" aria-hidden="true"></span>
       </summary>
-      <article [innerHTML]="item.text"></article>
+      <article [innerHTML]="t('experiences.' + key + '.text')"></article>
     </details>
     }
   </div>

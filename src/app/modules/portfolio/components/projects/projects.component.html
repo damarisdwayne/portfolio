@@ -1,17 +1,20 @@
-<div class="container">
-  <p class="section-eyebrow">Portfólio</p>
-  <h2>Projetos desenvolvidos</h2>
+<div class="container" *transloco="let t">
+  <p class="section-eyebrow">{{ t('projects.eyebrow') }}</p>
+  <h2>{{ t('projects.title') }}</h2>
 
   <ul class="projects-grid">
     @for (item of arrayProjects(); track item.title) {
     <li>
-      <button (click)="openDialog(item)" [attr.aria-label]="'Ver detalhes do projeto ' + item.title">
+      <button
+        (click)="openDialog(item)"
+        [attr.aria-label]="t('projects.viewLabel') + ' ' + item.title"
+      >
         <span class="project-card__top">
           <span class="project-card__badge">{{ item.title.charAt(0) }}</span>
           <span class="project-card__arrow" aria-hidden="true"></span>
         </span>
         <span class="project-card__title">{{ item.title }}</span>
-        <span class="project-card__cta">Ver detalhes</span>
+        <span class="project-card__cta">{{ t('projects.details') }}</span>
       </button>
     </li>
     }

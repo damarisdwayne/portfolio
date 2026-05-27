@@ -4,14 +4,14 @@ import {
   MatDialogModule,
   MatDialogRef,
 } from '@angular/material/dialog';
-
+import { TranslocoModule } from '@jsverse/transloco';
 
 import { IProjects } from '../../../interface/IProjects.interface';
 
 @Component({
   selector: 'app-dialog-projects',
   standalone: true,
-  imports: [MatDialogModule],
+  imports: [MatDialogModule, TranslocoModule],
   templateUrl: './dialog-projects.component.html',
   styleUrl: './dialog-projects.component.scss',
 })

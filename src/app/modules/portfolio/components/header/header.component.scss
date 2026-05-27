@@ -2,6 +2,81 @@
   display: block;
 }
 
+.cv-dropdown {
+  position: relative;
+  display: inline-block;
+
+  &__trigger {
+    gap: 9px;
+  }
+
+  &__caret {
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translate(-1px, -1px);
+    transition: transform 0.2s ease;
+  }
+
+  &__trigger[aria-expanded="true"] &__caret {
+    transform: rotate(-135deg) translate(-1px, -1px);
+  }
+
+  &__menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 10;
+    min-width: 100%;
+    width: max-content;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-soft);
+    animation: cv-menu-in 0.16s ease;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.92rem;
+    color: var(--text);
+    white-space: nowrap;
+    transition: background 0.18s ease;
+
+    &:hover {
+      background: rgba(139, 92, 246, 0.14);
+    }
+  }
+
+  &__flag {
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+}
+
+@keyframes cv-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero {
   position: relative;
   padding: 80px 0 40px;
@@ -178,6 +253,46 @@
   }
   100% {
     box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.2s ease, background 0.2s ease;
+
+  span.is-active {
+    color: var(--primary-400);
+  }
+
+  &__sep {
+    color: var(--muted);
+  }
+
+  &:hover {
+    border-color: var(--primary-400);
+    background: rgba(139, 92, 246, 0.12);
+  }
+
+  @media (max-width: 640px) {
+    top: 16px;
+    right: 16px;
   }
 }
 
